@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Servicio Técnico</string>
+    <string name="customer_name_label" translatable="false">Nombre del cliente</string>
+    <string name="new_ticket_description">Crear nuevo ticket</string>
+    <string name="no_tickets_message">No hay tickets para mostrar. Presiona el botón + para
+            agregar uno nuevo.
+        </string>
+    <string name="register_service_order_title" translatable="false">Registrar Orden de Servicio</string>
+    <string name="ticket_list_title" translatable="false">Lista de Tickets</string>
+    <style name="Theme.ServicioTecnico" parent="android:Theme.Material.Light.NoActionBar">
+    </style>
+</resources>
