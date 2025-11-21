@@ -5,8 +5,11 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-// VERSIÓN FINAL: Se añade ArregloEntity y se sube la versión.
-@Database(entities = [ServiceTicketEntity::class, ArregloEntity::class], version = 6, exportSchema = false)
+@Database(
+    entities = [ServiceTicketEntity::class, ArregloEntity::class], // ArregloEntity AÑADIDO
+    version = 7, // Versión incrementada
+    exportSchema = false // Warning solucionado
+)
 abstract class BaseDatosApp : RoomDatabase() {
     abstract fun serviceDao(): ServiceDao
 

@@ -4,7 +4,14 @@ import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -105,9 +112,8 @@ fun RegistroScreen(navController: NavController, vm: ServiceViewModel) {
             Button(
                 onClick = {
                     vm.guardarTicket { nuevoId ->
-                        // Navega a la pantalla de detalle de la nueva orden
                         navController.navigate("detalle_orden/$nuevoId") {
-                            popUpTo("lista") // Vuelve a la lista para no tener el formulario en el backstack
+                            popUpTo("lista")
                         }
                     }
                 },

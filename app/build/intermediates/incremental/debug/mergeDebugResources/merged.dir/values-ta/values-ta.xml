@@ -72,6 +72,7 @@
     <string msgid="6616362054113087709" name="m3c_time_picker_pm">"PM"</string>
     <string msgid="1805687647081129904" name="m3c_tooltip_long_press_label">"உதவிக்குறிப்பைக் காட்டு"</string>
     <string msgid="5460405025248574620" name="m3c_tooltip_pane_description">"உதவிக்குறிப்பு"</string>
+    <string msgid="8471891128988107974" name="mc2_snackbar_pane_title">"விழிப்பூட்டல்"</string>
     <string msgid="542007171693138492" name="navigation_menu">"வழிசெலுத்தல் மெனு"</string>
     <string msgid="6610465462668679431" name="not_selected">"தேர்ந்தெடுக்கப்படவில்லை"</string>
     <string msgid="5941395253238309765" name="range_end">"வரம்பு முடிவு"</string>

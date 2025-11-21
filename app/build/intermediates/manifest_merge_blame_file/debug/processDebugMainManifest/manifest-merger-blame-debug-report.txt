@@ -8,170 +8,149 @@
 8        android:minSdkVersion="26"
 9        android:targetSdkVersion="36" />
 10
-11    <!-- Permiso para acceder a Internet -->
-12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:6:5-67
-12-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:6:22-64
-13
-14    <uses-feature
-14-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:8:5-10:36
-15        android:name="android.hardware.camera"
-15-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:9:9-47
-16        android:required="false" />
-16-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:10:9-33
-17
-18    <uses-permission android:name="android.permission.CAMERA" />
-18-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:12:5-65
-18-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:12:22-62
-19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-19-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:13:5-80
-19-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:13:22-77
-20
-21    <permission
-21-->[androidx.core:core:1.15.0] /Users/benyistar/.gradle/caches/8.13/transforms/db230fba560a6b7188ac56d5a11e7ac4/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
-22        android:name="com.serviciotecnico.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-22-->[androidx.core:core:1.15.0] /Users/benyistar/.gradle/caches/8.13/transforms/db230fba560a6b7188ac56d5a11e7ac4/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
-23        android:protectionLevel="signature" />
-23-->[androidx.core:core:1.15.0] /Users/benyistar/.gradle/caches/8.13/transforms/db230fba560a6b7188ac56d5a11e7ac4/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
-24
-25    <uses-permission android:name="com.serviciotecnico.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-25-->[androidx.core:core:1.15.0] /Users/benyistar/.gradle/caches/8.13/transforms/db230fba560a6b7188ac56d5a11e7ac4/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
-25-->[androidx.core:core:1.15.0] /Users/benyistar/.gradle/caches/8.13/transforms/db230fba560a6b7188ac56d5a11e7ac4/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
-26
-27    <application
-27-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:14:5-34:19
-28        android:allowBackup="true"
-28-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:16:9-35
-29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.15.0] /Users/benyistar/.gradle/caches/8.13/transforms/db230fba560a6b7188ac56d5a11e7ac4/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
-30        android:dataExtractionRules="@xml/data_extraction_rules"
-30-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:17:9-65
-31        android:debuggable="true"
-32        android:extractNativeLibs="false"
-33        android:fullBackupContent="@xml/backup_rules"
-33-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:18:9-54
-34        android:icon="@mipmap/ic_launcher"
-34-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:19:9-43
-35        android:label="@string/app_name"
-35-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:20:9-41
-36        android:roundIcon="@mipmap/ic_launcher_round"
-36-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:21:9-54
-37        android:supportsRtl="true"
-37-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:22:9-35
-38        android:testOnly="true"
-39        android:theme="@style/Theme.ServicioTecnico"
-39-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:23:9-53
-40        android:usesCleartextTraffic="true" >
-40-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:15:9-44
-41        <activity
-41-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:25:9-33:20
-42            android:name="com.serviciotecnico.MainActivity"
-42-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:26:13-41
-43            android:exported="true"
-43-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:27:13-36
-44            android:theme="@style/Theme.ServicioTecnico" >
-44-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:28:13-57
-45            <intent-filter>
-45-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:29:13-32:29
-46                <action android:name="android.intent.action.MAIN" />
-46-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:30:17-69
-46-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:30:25-66
-47
-48                <category android:name="android.intent.category.LAUNCHER" />
-48-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:31:17-77
-48-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:31:27-74
-49            </intent-filter>
-50        </activity>
-51
-52        <service
-52-->[androidx.room:room-runtime:2.5.2] /Users/benyistar/.gradle/caches/8.13/transforms/6b2a166b927655d21c1ccca9e45c32ed/transformed/room-runtime-2.5.2/AndroidManifest.xml:24:9-28:63
-53            android:name="androidx.room.MultiInstanceInvalidationService"
-53-->[androidx.room:room-runtime:2.5.2] /Users/benyistar/.gradle/caches/8.13/transforms/6b2a166b927655d21c1ccca9e45c32ed/transformed/room-runtime-2.5.2/AndroidManifest.xml:25:13-74
-54            android:directBootAware="true"
-54-->[androidx.room:room-runtime:2.5.2] /Users/benyistar/.gradle/caches/8.13/transforms/6b2a166b927655d21c1ccca9e45c32ed/transformed/room-runtime-2.5.2/AndroidManifest.xml:26:13-43
-55            android:exported="false" />
-55-->[androidx.room:room-runtime:2.5.2] /Users/benyistar/.gradle/caches/8.13/transforms/6b2a166b927655d21c1ccca9e45c32ed/transformed/room-runtime-2.5.2/AndroidManifest.xml:27:13-37
-56
-57        <provider
-57-->[androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
-58            android:name="androidx.startup.InitializationProvider"
-58-->[androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:25:13-67
-59            android:authorities="com.serviciotecnico.androidx-startup"
-59-->[androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:26:13-68
-60            android:exported="false" >
-60-->[androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:27:13-37
-61            <meta-data
-61-->[androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
-62                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-62-->[androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:30:17-75
-63                android:value="androidx.startup" />
-63-->[androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:31:17-49
-64            <meta-data
-64-->[androidx.lifecycle:lifecycle-process:2.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/87466946aac3ad4f7408f54d1dfee815/transformed/jetified-lifecycle-process-2.9.0/AndroidManifest.xml:29:13-31:52
-65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-65-->[androidx.lifecycle:lifecycle-process:2.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/87466946aac3ad4f7408f54d1dfee815/transformed/jetified-lifecycle-process-2.9.0/AndroidManifest.xml:30:17-78
-66                android:value="androidx.startup" />
-66-->[androidx.lifecycle:lifecycle-process:2.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/87466946aac3ad4f7408f54d1dfee815/transformed/jetified-lifecycle-process-2.9.0/AndroidManifest.xml:31:17-49
-67            <meta-data
-67-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
-68                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-68-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
-69                android:value="androidx.startup" />
-69-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
-70        </provider>
-71
-72        <activity
-72-->[androidx.compose.ui:ui-test-manifest:1.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/9a737a3e203629a01d5b9492cbcf8d3d/transformed/jetified-ui-test-manifest-1.9.0/AndroidManifest.xml:23:9-26:79
-73            android:name="androidx.activity.ComponentActivity"
-73-->[androidx.compose.ui:ui-test-manifest:1.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/9a737a3e203629a01d5b9492cbcf8d3d/transformed/jetified-ui-test-manifest-1.9.0/AndroidManifest.xml:24:13-63
-74            android:exported="true"
-74-->[androidx.compose.ui:ui-test-manifest:1.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/9a737a3e203629a01d5b9492cbcf8d3d/transformed/jetified-ui-test-manifest-1.9.0/AndroidManifest.xml:25:13-36
-75            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
-75-->[androidx.compose.ui:ui-test-manifest:1.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/9a737a3e203629a01d5b9492cbcf8d3d/transformed/jetified-ui-test-manifest-1.9.0/AndroidManifest.xml:26:13-76
-76        <activity
-76-->[androidx.compose.ui:ui-tooling-android:1.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/2d16b014b6fcc0d2c12bcef0abc21ae2/transformed/jetified-ui-tooling/AndroidManifest.xml:23:9-25:39
-77            android:name="androidx.compose.ui.tooling.PreviewActivity"
-77-->[androidx.compose.ui:ui-tooling-android:1.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/2d16b014b6fcc0d2c12bcef0abc21ae2/transformed/jetified-ui-tooling/AndroidManifest.xml:24:13-71
-78            android:exported="true" />
-78-->[androidx.compose.ui:ui-tooling-android:1.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/2d16b014b6fcc0d2c12bcef0abc21ae2/transformed/jetified-ui-tooling/AndroidManifest.xml:25:13-36
-79
-80        <receiver
-80-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
-81            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-81-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
-82            android:directBootAware="false"
-82-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
-83            android:enabled="true"
-83-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
-84            android:exported="true"
-84-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
-85            android:permission="android.permission.DUMP" >
-85-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
-86            <intent-filter>
-86-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
-87                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-87-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
-87-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
-88            </intent-filter>
-89            <intent-filter>
-89-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
-90                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-90-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
-90-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
-91            </intent-filter>
-92            <intent-filter>
-92-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
-93                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-93-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
-93-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
-94            </intent-filter>
-95            <intent-filter>
-95-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
-96                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-96-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
-96-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
-97            </intent-filter>
-98        </receiver>
-99    </application>
-100
-101</manifest>
+11    <permission
+11-->[androidx.core:core:1.15.0] /Users/benyistar/.gradle/caches/8.13/transforms/db230fba560a6b7188ac56d5a11e7ac4/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+12        android:name="com.serviciotecnico.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.15.0] /Users/benyistar/.gradle/caches/8.13/transforms/db230fba560a6b7188ac56d5a11e7ac4/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.15.0] /Users/benyistar/.gradle/caches/8.13/transforms/db230fba560a6b7188ac56d5a11e7ac4/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.serviciotecnico.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.15.0] /Users/benyistar/.gradle/caches/8.13/transforms/db230fba560a6b7188ac56d5a11e7ac4/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.15.0] /Users/benyistar/.gradle/caches/8.13/transforms/db230fba560a6b7188ac56d5a11e7ac4/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:5:5-24:19
+18        android:allowBackup="true"
+18-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.15.0] /Users/benyistar/.gradle/caches/8.13/transforms/db230fba560a6b7188ac56d5a11e7ac4/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:7:9-65
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:fullBackupContent="@xml/backup_rules"
+23-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:8:9-54
+24        android:icon="@mipmap/ic_launcher"
+24-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:9:9-43
+25        android:label="@string/app_name"
+25-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:10:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:11:9-54
+27        android:supportsRtl="true"
+27-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:12:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.ServicioTecnico" >
+29-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:13:9-53
+30        <activity
+30-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:15:9-23:20
+31            android:name="com.serviciotecnico.MainActivity"
+31-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:16:13-41
+32            android:exported="true"
+32-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:17:13-36
+33            android:theme="@style/Theme.ServicioTecnico" >
+33-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:18:13-57
+34            <intent-filter>
+34-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:19:13-22:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:20:17-69
+35-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:20:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:21:17-77
+37-->/Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:21:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <service
+41-->[androidx.room:room-runtime:2.5.2] /Users/benyistar/.gradle/caches/8.13/transforms/6b2a166b927655d21c1ccca9e45c32ed/transformed/room-runtime-2.5.2/AndroidManifest.xml:24:9-28:63
+42            android:name="androidx.room.MultiInstanceInvalidationService"
+42-->[androidx.room:room-runtime:2.5.2] /Users/benyistar/.gradle/caches/8.13/transforms/6b2a166b927655d21c1ccca9e45c32ed/transformed/room-runtime-2.5.2/AndroidManifest.xml:25:13-74
+43            android:directBootAware="true"
+43-->[androidx.room:room-runtime:2.5.2] /Users/benyistar/.gradle/caches/8.13/transforms/6b2a166b927655d21c1ccca9e45c32ed/transformed/room-runtime-2.5.2/AndroidManifest.xml:26:13-43
+44            android:exported="false" />
+44-->[androidx.room:room-runtime:2.5.2] /Users/benyistar/.gradle/caches/8.13/transforms/6b2a166b927655d21c1ccca9e45c32ed/transformed/room-runtime-2.5.2/AndroidManifest.xml:27:13-37
+45
+46        <provider
+46-->[androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+47            android:name="androidx.startup.InitializationProvider"
+47-->[androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:25:13-67
+48            android:authorities="com.serviciotecnico.androidx-startup"
+48-->[androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:26:13-68
+49            android:exported="false" >
+49-->[androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:27:13-37
+50            <meta-data
+50-->[androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+51                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+51-->[androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:30:17-75
+52                android:value="androidx.startup" />
+52-->[androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:31:17-49
+53            <meta-data
+53-->[androidx.lifecycle:lifecycle-process:2.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/87466946aac3ad4f7408f54d1dfee815/transformed/jetified-lifecycle-process-2.9.0/AndroidManifest.xml:29:13-31:52
+54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+54-->[androidx.lifecycle:lifecycle-process:2.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/87466946aac3ad4f7408f54d1dfee815/transformed/jetified-lifecycle-process-2.9.0/AndroidManifest.xml:30:17-78
+55                android:value="androidx.startup" />
+55-->[androidx.lifecycle:lifecycle-process:2.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/87466946aac3ad4f7408f54d1dfee815/transformed/jetified-lifecycle-process-2.9.0/AndroidManifest.xml:31:17-49
+56            <meta-data
+56-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+57                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+57-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+58                android:value="androidx.startup" />
+58-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+59        </provider>
+60
+61        <activity
+61-->[androidx.compose.ui:ui-test-manifest:1.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/9a737a3e203629a01d5b9492cbcf8d3d/transformed/jetified-ui-test-manifest-1.9.0/AndroidManifest.xml:23:9-26:79
+62            android:name="androidx.activity.ComponentActivity"
+62-->[androidx.compose.ui:ui-test-manifest:1.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/9a737a3e203629a01d5b9492cbcf8d3d/transformed/jetified-ui-test-manifest-1.9.0/AndroidManifest.xml:24:13-63
+63            android:exported="true"
+63-->[androidx.compose.ui:ui-test-manifest:1.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/9a737a3e203629a01d5b9492cbcf8d3d/transformed/jetified-ui-test-manifest-1.9.0/AndroidManifest.xml:25:13-36
+64            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+64-->[androidx.compose.ui:ui-test-manifest:1.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/9a737a3e203629a01d5b9492cbcf8d3d/transformed/jetified-ui-test-manifest-1.9.0/AndroidManifest.xml:26:13-76
+65        <activity
+65-->[androidx.compose.ui:ui-tooling-android:1.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/2d16b014b6fcc0d2c12bcef0abc21ae2/transformed/jetified-ui-tooling/AndroidManifest.xml:23:9-25:39
+66            android:name="androidx.compose.ui.tooling.PreviewActivity"
+66-->[androidx.compose.ui:ui-tooling-android:1.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/2d16b014b6fcc0d2c12bcef0abc21ae2/transformed/jetified-ui-tooling/AndroidManifest.xml:24:13-71
+67            android:exported="true" />
+67-->[androidx.compose.ui:ui-tooling-android:1.9.0] /Users/benyistar/.gradle/caches/8.13/transforms/2d16b014b6fcc0d2c12bcef0abc21ae2/transformed/jetified-ui-tooling/AndroidManifest.xml:25:13-36
+68
+69        <receiver
+69-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+70            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+70-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+71            android:directBootAware="false"
+71-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+72            android:enabled="true"
+72-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+73            android:exported="true"
+73-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+74            android:permission="android.permission.DUMP" >
+74-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+75            <intent-filter>
+75-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+76                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+76-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+76-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+77            </intent-filter>
+78            <intent-filter>
+78-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+79                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+79-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+79-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+80            </intent-filter>
+81            <intent-filter>
+81-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+82                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+83            </intent-filter>
+84            <intent-filter>
+84-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+85                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+85-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+85-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/514ed17cfbecea3620d5208f8ba0ca4e/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+86            </intent-filter>
+87        </receiver>
+88    </application>
+89
+90</manifest>

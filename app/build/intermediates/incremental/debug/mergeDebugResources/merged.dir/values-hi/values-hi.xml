@@ -72,6 +72,7 @@
     <string msgid="6616362054113087709" name="m3c_time_picker_pm">"PM"</string>
     <string msgid="1805687647081129904" name="m3c_tooltip_long_press_label">"टूलटिप देखें"</string>
     <string msgid="5460405025248574620" name="m3c_tooltip_pane_description">"टूलटिप"</string>
+    <string msgid="8471891128988107974" name="mc2_snackbar_pane_title">"सूचना"</string>
     <string msgid="542007171693138492" name="navigation_menu">"नेविगेशन मेन्यू"</string>
     <string msgid="6610465462668679431" name="not_selected">"नहीं चुना गया"</string>
     <string msgid="5941395253238309765" name="range_end">"रेंज की सीमा"</string>

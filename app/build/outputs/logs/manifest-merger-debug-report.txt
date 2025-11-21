@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:2:1-35:12
-INJECTED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:2:1-35:12
+ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:2:1-25:12
 MERGED from [androidx.navigation:navigation-common:2.7.0] /Users/benyistar/.gradle/caches/8.13/transforms/d3f707af0bb061d6b20d40995fadbdd7/transformed/navigation-common-2.7.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.7.0] /Users/benyistar/.gradle/caches/8.13/transforms/e1c281f4ac2e03f6eb19586082f1d3fa/transformed/navigation-runtime-2.7.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.7.0] /Users/benyistar/.gradle/caches/8.13/transforms/c6bc752015777e15f7e935fbda5dc9e4/transformed/navigation-common-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
@@ -83,27 +83,9 @@ MERGED from [androidx.core:core-viewtree:1.0.0] /Users/benyistar/.gradle/caches/
 		INJECTED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:2:11-69
-uses-permission#android.permission.INTERNET
-ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:6:5-67
-	android:name
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:6:22-64
-uses-feature#android.hardware.camera
-ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:8:5-10:36
-	android:required
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:10:9-33
-	android:name
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:9:9-47
-uses-permission#android.permission.CAMERA
-ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:12:5-65
-	android:name
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:12:22-62
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:13:5-80
-	android:name
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:13:22-77
 application
-ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:14:5-34:19
-INJECTED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:14:5-34:19
+ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:5:5-24:19
+INJECTED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:5:5-24:19
 MERGED from [androidx.room:room-runtime:2.5.2] /Users/benyistar/.gradle/caches/8.13/transforms/6b2a166b927655d21c1ccca9e45c32ed/transformed/room-runtime-2.5.2/AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.room:room-runtime:2.5.2] /Users/benyistar/.gradle/caches/8.13/transforms/6b2a166b927655d21c1ccca9e45c32ed/transformed/room-runtime-2.5.2/AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/benyistar/.gradle/caches/8.13/transforms/926b31fa6dad5d72b639d8b3791d6f99/transformed/jetified-emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
@@ -127,43 +109,41 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/benyistar/.gradle/ca
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.15.0] /Users/benyistar/.gradle/caches/8.13/transforms/db230fba560a6b7188ac56d5a11e7ac4/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:22:9-35
+		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:20:9-41
+		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:10:9-41
 	android:fullBackupContent
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:18:9-54
+		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:8:9-54
 	android:roundIcon
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:21:9-54
+		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:11:9-54
 	tools:targetApi
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:24:9-29
+		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:14:9-29
 	android:icon
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:19:9-43
+		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:23:9-53
+		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:13:9-53
 	android:dataExtractionRules
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:17:9-65
-	android:usesCleartextTraffic
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:15:9-44
+		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:7:9-65
 activity#com.serviciotecnico.MainActivity
-ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:25:9-33:20
+ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:15:9-23:20
 	android:exported
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:27:13-36
+		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:17:13-36
 	android:theme
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:28:13-57
+		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:18:13-57
 	android:name
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:26:13-41
+		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:16:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:29:13-32:29
+ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:19:13-22:29
 action#android.intent.action.MAIN
-ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:30:17-69
+ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:30:25-66
+		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:31:17-77
+ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:31:27-74
+		ADDED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml:21:27-74
 uses-sdk
 INJECTED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/benyistar/Downloads/ServicioTecnico/app/src/main/AndroidManifest.xml

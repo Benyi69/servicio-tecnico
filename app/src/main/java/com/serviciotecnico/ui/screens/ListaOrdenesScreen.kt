@@ -2,7 +2,16 @@ package com.serviciotecnico.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
@@ -91,7 +100,7 @@ fun ListaOrdenesScreen(navController: NavController, vm: ServiceViewModel) {
 @Composable
 fun TarjetaOrden(orden: ServiceTicket, onClick: () -> Unit, onEliminar: () -> Unit) {
     val cardColor = if (orden.completado) {
-        Color(0xFFE8F5E9) // Un verde pálido
+        Color(0xFFE8F5E9)
     } else {
         MaterialTheme.colorScheme.surfaceVariant
     }
@@ -128,10 +137,10 @@ fun TarjetaOrden(orden: ServiceTicket, onClick: () -> Unit, onEliminar: () -> Un
             Text(orden.vehiculo, style = MaterialTheme.typography.bodyMedium)
             Text(orden.descripcion, style = MaterialTheme.typography.bodySmall, maxLines = 2)
 
-            orden.imagenUri?.let { it -> // La variable se llama 'it'
+            orden.imagenUri?.let { it ->
                 Spacer(Modifier.height(8.dp))
                 Image(
-                    painter = rememberAsyncImagePainter(it), // Usamos 'it' aquí
+                    painter = rememberAsyncImagePainter(it),
                     contentDescription = "Imagen de la orden",
                     contentScale = ContentScale.Crop,
                     modifier = Modifier

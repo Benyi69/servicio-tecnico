@@ -36,7 +36,7 @@ public final class BaseDatosApp_Impl extends BaseDatosApp {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(6) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(7) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `ordenes_servicio` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `cliente` TEXT NOT NULL, `vehiculo` TEXT NOT NULL, `patente` TEXT NOT NULL, `descripcion` TEXT NOT NULL, `completado` INTEGER NOT NULL, `imagenUri` TEXT, `fechaRegistro` INTEGER NOT NULL)");

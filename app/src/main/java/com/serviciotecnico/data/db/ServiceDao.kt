@@ -12,8 +12,6 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface ServiceDao {
 
-    // --- Consultas para Tickets y Arreglos (usando la relación) ---
-
     @Transaction
     @Query("SELECT * FROM ordenes_servicio ORDER BY fechaRegistro DESC")
     fun obtenerTodos(): Flow<List<TicketConArreglos>>
@@ -21,8 +19,6 @@ interface ServiceDao {
     @Transaction
     @Query("SELECT * FROM ordenes_servicio WHERE id = :id")
     fun obtenerPorId(id: Long): Flow<TicketConArreglos?>
-    
-    // --- Métodos para Tickets ---
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertar(entidad: ServiceTicketEntity): Long
@@ -35,8 +31,6 @@ interface ServiceDao {
 
     @Query("DELETE FROM ordenes_servicio")
     suspend fun eliminarTodos()
-
-    // --- Métodos para Arreglos ---
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertarArreglo(arreglo: ArregloEntity): Long

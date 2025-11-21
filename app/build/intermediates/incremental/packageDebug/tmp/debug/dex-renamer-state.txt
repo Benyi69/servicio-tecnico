@@ -1,4 +1,4 @@
-#Tue Nov 18 13:46:03 CLST 2025
+#Fri Nov 21 18:02:52 CLST 2025
 base.0=/Users/benyistar/Downloads/ServicioTecnico/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/benyistar/Downloads/ServicioTecnico/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.2=/Users/benyistar/Downloads/ServicioTecnico/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex

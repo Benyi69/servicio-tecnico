@@ -1,6 +1,14 @@
 package com.serviciotecnico.ui.screens
 
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.text.KeyboardOptions
@@ -57,7 +65,6 @@ fun DetalleOrdenScreen(navController: NavController, vm: ServiceViewModel, id: L
                 CircularProgressIndicator()
             } else {
                 LazyColumn(modifier = Modifier.fillMaxSize().padding(16.dp)) {
-                    // --- Sección de Datos del Cliente ---
                     item {
                         Text("Detalles del Cliente y Vehículo", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
                         Spacer(Modifier.height(8.dp))
@@ -69,7 +76,6 @@ fun DetalleOrdenScreen(navController: NavController, vm: ServiceViewModel, id: L
                         Divider(Modifier.padding(vertical = 16.dp))
                     }
 
-                    // --- Sección de Arreglos y Precios ---
                     item {
                         Text("Arreglos y Repuestos", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
                         Spacer(Modifier.height(8.dp))
@@ -79,7 +85,6 @@ fun DetalleOrdenScreen(navController: NavController, vm: ServiceViewModel, id: L
                         ItemArreglo(arreglo = arreglo, onEliminar = { vm.eliminarArreglo(arreglo) })
                     }
 
-                    // --- Sección de Costo Total ---
                     item {
                         Spacer(Modifier.height(16.dp))
                         Divider()
@@ -113,7 +118,6 @@ fun DetalleOrdenScreen(navController: NavController, vm: ServiceViewModel, id: L
     }
 }
 
-// IMPLEMENTACIÓN CORRECTA DE LA FUNCIÓN QUE FALTABA
 @Composable
 fun CampoDetalle(label: String, value: String) {
     Column(modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)) {
@@ -192,7 +196,6 @@ fun Double.toCurrencyFormat(): String {
     return NumberFormat.getCurrencyInstance(Locale("es", "CL")).format(this)
 }
 
-// FUNCIÓN QUE FALTABA
 fun Long.toReadableDate(): String {
     val sdf = SimpleDateFormat("dd/MM/yyyy, HH:mm", Locale.getDefault())
     return sdf.format(Date(this))
