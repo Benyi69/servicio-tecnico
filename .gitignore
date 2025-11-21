@@ -1,0 +1,28 @@
+# Archivos de compilación y APKs
+*.apk
+*.aab
+*.ap_
+*.dex
+/build/
+
+# Archivos del IDE
+.idea/
+.gradle/
+*.iml
+*.project
+
+# Archivos locales de configuración
+local.properties
+gradle.properties
+
+# Archivos de keystore
+*.jks
+*.keystore
+
+# Logs y otros archivos temporales
+/captures/
+.externalNativeBuild/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
