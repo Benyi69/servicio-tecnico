@@ -11,7 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.compose.rememberNavController
-import com.serviciotecnico.data.db.BaseDatosApp
+import com.serviciotecnico.data.NetworkMonitor
 import com.serviciotecnico.data.repository.ServiceRepository
 import com.serviciotecnico.ui.navigation.AppNavigation
 import com.serviciotecnico.ui.theme.ServicioTecnicoTheme
@@ -22,9 +22,9 @@ class MainActivity : ComponentActivity() {
     private val vm: ServiceViewModel by viewModels {
         object : ViewModelProvider.Factory {
             override fun <T : ViewModel> create(modelClass: Class<T>): T {
-                val db = BaseDatosApp.obtenerInstancia(applicationContext)
-                val repo = ServiceRepository(db.serviceDao())
-                return ServiceViewModel(repo) as T
+                val repo = ServiceRepository()
+                val networkMonitor = NetworkMonitor(applicationContext)
+                return ServiceViewModel(repo, networkMonitor) as T
             }
         }
     }
@@ -33,7 +33,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ServicioTecnicoTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                     val navController = rememberNavController()
                     AppNavigation(navController = navController, vm = vm)

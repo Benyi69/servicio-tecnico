@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Servicio Técnico</string>
+    <string name="app_name" translatable="false">ServiTech Pro</string>
     <string name="customer_name_label" translatable="false">Nombre del cliente</string>
+    <string name="gcm_defaultSenderId" translatable="false">1081198791818</string>
+    <string name="google_api_key" translatable="false">AIzaSyAFb7Ck72swYgU8pJKUYZOg1ZLH-c667XY</string>
+    <string name="google_app_id" translatable="false">1:1081198791818:android:cae28f5e5acadf7cd97173</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAFb7Ck72swYgU8pJKUYZOg1ZLH-c667XY</string>
+    <string name="google_storage_bucket" translatable="false">servitech-pro-cb02f.firebasestorage.app</string>
     <string name="new_ticket_description">Crear nuevo ticket</string>
     <string name="no_tickets_message">No hay tickets para mostrar. Presiona el botón + para
             agregar uno nuevo.
         </string>
+    <string name="project_id" translatable="false">servitech-pro-cb02f</string>
     <string name="register_service_order_title" translatable="false">Registrar Orden de Servicio</string>
     <string name="ticket_list_title" translatable="false">Lista de Tickets</string>
     <style name="Theme.ServicioTecnico" parent="android:Theme.Material.Light.NoActionBar">

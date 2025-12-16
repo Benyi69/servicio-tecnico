@@ -1,39 +1,76 @@
 package com.serviciotecnico.viewmodel
 
-import app.cash.turbine.test
-import com.serviciotecnico.data.repository.ServiceRepository
-import com.serviciotecnico.model.ErrorFormularioOrden
-import com.serviciotecnico.model.EstadoFormularioOrden
+import com.serviciotecnico.data.INetworkMonitor
+import com.serviciotecnico.data.repository.IServiceRepository
+import com.serviciotecnico.model.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.runTest
 import kotlinx.coroutines.test.setMain
 import org.junit.After
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNotNull
+import org.junit.Assert.assertNull
 import org.junit.Before
 import org.junit.Test
-import org.mockito.kotlin.any
-import org.mockito.kotlin.doReturn
-import org.mockito.kotlin.mock
-import org.mockito.kotlin.whenever
 
 @ExperimentalCoroutinesApi
 class ServiceViewModelTest {
 
-    private lateinit var viewModel: ServiceViewModel
-    private lateinit var repository: ServiceRepository
     private val testDispatcher = StandardTestDispatcher()
+
+
+
+    class FakeServiceRepository : IServiceRepository {
+        private val testUser = User("1", "test", "test@test.com", null, true, UserRole.TECNICO)
+        
+        override suspend fun login(email: String, pass: String): User? {
+            return if (email == "test@test.com" && pass == "password") {
+                testUser
+            } else {
+                null
+            }
+        }
+
+        // Implementaciones actualizadas de los métodos
+        override fun obtenerTodos(user: User?): Flow<List<ServiceTicket>> = flowOf(emptyList())
+        override fun obtenerPorId(id: String): Flow<ServiceTicket> = flowOf(ServiceTicket(id = id))
+        override suspend fun insertar(ticket: ServiceTicket, clientId: String): String = "new_ticket_id"
+        override suspend fun actualizarEstado(ticketId: String, nuevoEstado: OrderStatus) {}
+        override suspend fun addArregloToTicket(ticketId: String, arreglo: Arreglo) {}
+        override suspend fun eliminarTicket(ticketId: String) {}
+        override suspend fun register(username: String, email: String, pass: String): User? = null
+        override suspend fun recuperarPass(email: String) {}
+        override suspend fun actualizarPerfil(nombre: String): User? = null
+        override suspend fun signOut() {}
+        override suspend fun obtenerClientes(): List<Cliente> = emptyList()
+        override suspend fun registrarClienteInvitado(name: String, email: String?, phone: String?): Cliente? = null
+        override suspend fun obtenerOrdenPorIdPublico(orderId: String): ServiceTicket? = null
+        override fun obtenerServiceOfferings(): Flow<List<ServiceOffering>> = flowOf(emptyList())
+    }
+
+    class FakeNetworkMonitor : INetworkMonitor {
+        override val isOnline = MutableStateFlow(true)
+        override fun unregister() {}
+    }
+
+    // --- Tests ---
+
+    private lateinit var viewModel: ServiceViewModel
+    private lateinit var fakeRepository: FakeServiceRepository
+    private lateinit var fakeNetworkMonitor: FakeNetworkMonitor
 
     @Before
     fun setUp() {
         Dispatchers.setMain(testDispatcher)
-        repository = mock {
-            on { obtenerTodos() } doReturn flowOf(emptyList())
-        }
-        viewModel = ServiceViewModel(repository)
+        fakeRepository = FakeServiceRepository()
+        fakeNetworkMonitor = FakeNetworkMonitor()
+        viewModel = ServiceViewModel(fakeRepository, fakeNetworkMonitor)
     }
 
     @After
@@ -42,55 +79,34 @@ class ServiceViewModelTest {
     }
 
     @Test
-    fun `validar - cuando los campos estan vacios - deberia emitir errores`() = runTest {
-        viewModel.errores.test {
-            assertEquals(ErrorFormularioOrden(), awaitItem())
+    fun `login con credenciales correctas actualiza el estado a exitoso`() = runTest {
+        // Given
+        val email = "test@test.com"
+        val password = "password"
 
-            viewModel.guardarTicket { /* no-op */ }
+        // When
+        viewModel.login(email, password)
+        testDispatcher.scheduler.advanceUntilIdle()
 
-            val errores = awaitItem()
-            // Lo devolvemos a su estado correcto
-            assertNotNull("El error del cliente no debería ser nulo", errores.errorCliente)
-            
-            assertNotNull("El error del vehículo no debería ser nulo", errores.errorVehiculo)
-            assertNotNull("El error de la patente no debería ser nulo", errores.errorPatente)
-            assertNotNull("El error de la descripción no debería ser nulo", errores.errorDescripcion)
-        }
+        // Then
+        assertEquals(true, viewModel.loginExitoso.value)
+        assertNotNull(viewModel.uiState.value.currentUser)
+        assertEquals(email, viewModel.uiState.value.currentUser?.email)
     }
 
     @Test
-    fun `validar - cuando todos los campos estan correctos - no deberia emitir errores`() = runTest {
-        viewModel.setCliente("Nombre Valido")
-        viewModel.setVehiculo("Vehiculo Valido")
-        viewModel.setPatente("Patente Valida")
-        viewModel.setDescripcion("Descripcion Valida")
+    fun `login con credenciales incorrectas actualiza el estado a error`() = runTest {
+        // Given
+        val email = "test@test.com"
+        val password = "wrongpassword"
 
-        viewModel.errores.test {
-            assertEquals(ErrorFormularioOrden(), awaitItem())
+        // When
+        viewModel.login(email, password)
+        testDispatcher.scheduler.advanceUntilIdle()
 
-            viewModel.guardarTicket { /* no-op */ }
-
-            expectNoEvents()
-        }
-    }
-
-    @Test
-    fun `guardarTicket - cuando es exitoso - deberia limpiar el formulario`() = runTest {
-        whenever(repository.insertar(any())).thenReturn(1L)
-
-        viewModel.setCliente("Test Cliente")
-        viewModel.setVehiculo("Test Vehiculo")
-        viewModel.setPatente("Test Patente")
-        viewModel.setDescripcion("Test Descripcion")
-
-        viewModel.formulario.test {
-            val formInicial = awaitItem()
-            assertEquals("Test Cliente", formInicial.cliente)
-
-            viewModel.guardarTicket { /* no-op */ }
-
-            val formFinal = awaitItem()
-            assertEquals(EstadoFormularioOrden(), formFinal)
-        }
+        // Then
+        assertEquals(false, viewModel.loginExitoso.value)
+        assertNull(viewModel.uiState.value.currentUser)
+        assertEquals("Credenciales inválidas", viewModel.uiState.value.error)
     }
 }

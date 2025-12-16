@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1081198791818",
+    "project_id": "servitech-pro-cb02f",
+    "storage_bucket": "servitech-pro-cb02f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081198791818:android:cae28f5e5acadf7cd97173",
+        "android_client_info": {
+          "package_name": "com.serviciotecnico"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFb7Ck72swYgU8pJKUYZOg1ZLH-c667XY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

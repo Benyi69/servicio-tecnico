@@ -24,7 +24,6 @@ import com.serviciotecnico.viewmodel.ServiceViewModel
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TicketListScreen(navController: NavController, vm: ServiceViewModel) {
-    // CORREGIDO: Se observa el uiState completo, no una variable 'tickets' que ya no existe.
     val uiState by vm.uiState.collectAsState()
 
     Scaffold(
@@ -54,7 +53,6 @@ fun TicketListScreen(navController: NavController, vm: ServiceViewModel) {
                     Text("No hay órdenes registradas. Presiona + para crear una.")
                 }
                 else -> {
-                    // CORREGIDO: Se usa un LazyColumn, la forma correcta de mostrar listas.
                     LazyColumn(
                         modifier = Modifier.fillMaxSize().padding(12.dp),
                         verticalArrangement = Arrangement.spacedBy(8.dp)

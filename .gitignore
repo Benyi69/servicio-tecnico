@@ -1,28 +1,21 @@
-# Archivos de compilación y APKs
-*.apk
-*.aab
-*.ap_
-*.dex
-/build/
-
-# Archivos del IDE
-.idea/
-.gradle/
 *.iml
-*.project
-
-# Archivos locales de configuración
-local.properties
-gradle.properties
-
-# Archivos de keystore
-*.jks
-*.keystore
-
-# Logs y otros archivos temporales
-/captures/
-.externalNativeBuild/
-
-# Archivos del sistema operativo
+.gradle
+/local.properties
+/./build/
+/./build
+/build
 .DS_Store
-Thumbs.db
+.idea
+.idea/caches
+.idea/libraries
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+captures
+*.jks
+/build
+/app/build
+*.apk
+app-release.apk
+# End of file.
