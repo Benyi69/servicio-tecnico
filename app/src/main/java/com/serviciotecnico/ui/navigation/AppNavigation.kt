@@ -69,9 +69,9 @@ fun AppNavigation(navController: NavHostController, vm: ServiceViewModel) {
         
         composable(
             route = "detalle_orden/{id}", 
-            arguments = listOf(navArgument("id") { type = NavType.StringType }) // Cambiado a StringType
+            arguments = listOf(navArgument("id") { type = NavType.StringType })
         ) { backStackEntry ->
-            val id = backStackEntry.arguments?.getString("id") ?: "" // Obtener como String
+            val id = backStackEntry.arguments?.getString("id") ?: ""
             DetalleOrdenScreen(navController, vm, id)
         }
     }

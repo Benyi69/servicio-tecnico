@@ -6,6 +6,6 @@ data class EstadoFormularioOrden(
     val vehiculo: String = "",
     val patente: String = "",
     val descripcion: String = "",
-    val costoTotal: String = "", // Añadido
+    val costoTotal: String = "",
     val imagenUri: String? = null
 )
